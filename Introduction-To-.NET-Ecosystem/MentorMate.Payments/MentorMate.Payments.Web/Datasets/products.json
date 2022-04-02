@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "Name": "Balvenie",
+    "Description": "50 Year Old Single Malt Scotch Whisky, Speyside",
+    "Price": 37149
+  },
+  {
+    "Id": 2,
+    "Name": "Macallan Lalique",
+    "Description": "62 Year Old Single Malt Scotch Whisky, Speyside &ndash; Highlands",
+    "Price": 30439
+  },
+  {
+    "Id": 3,
+    "Name": "Gordon & MacPhail Generations Mortlach",
+    "Description": "75 Years Old Single Malt Whisky, Speyside",
+    "Price": 25275
+  },
+  {
+    "Id": 4,
+    "Name": "Glenfiddich",
+    "Description": "50 Year Old Single Malt Scotch Whisky, Speyside",
+    "Price": 20431
+  },
+  {
+    "Id": 5,
+    "Name": "Macallan Fine & Rare",
+    "Description": "Vintage Single Malt Scotch Whisky, Speyside &ndash; Highlands",
+    "Price": 18699
+  }
+]

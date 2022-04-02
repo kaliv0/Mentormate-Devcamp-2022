@@ -1,0 +1,35 @@
+.my-lower-container {
+    background-color: #f6f5f5;
+    border: 2px solid #9b9898;
+    margin-top: 15px;
+    padding-bottom: 25px;
+
+    .center-text {
+        text-align: center;
+    }
+
+    .lower-text {
+        padding: 15px;
+    }
+
+    .services-row {
+        display: flex;
+
+        .service {
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            ion-icon {
+                font-size: 40px;
+                color: blue;
+            }
+
+            .service-name {
+                font-weight: bold;
+                margin: 10px;
+            }
+        }
+    }
+}

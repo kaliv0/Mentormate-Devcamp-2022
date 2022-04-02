@@ -1,0 +1,27 @@
+.info {
+    display: flex;
+    margin: 20px 10px 10px 0px;
+
+    .key-value-column {
+        width: 100%;
+
+        .key-value {
+            display: flex;
+
+            .key {
+                font-weight: bold;
+                border: 1px solid grey;
+                width: 50%;
+                padding: 5px;
+                word-break: break-word;
+            }
+
+            .value {
+                border: 1px solid grey;
+                width: 50%;
+                padding: 5px;
+                word-break: break-word;
+            }
+        }
+    }
+}

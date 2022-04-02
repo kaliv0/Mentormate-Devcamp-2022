@@ -1,0 +1,16 @@
+The difference between a CA certificate and a self-signed certificate is the issuer of the certificate.
+A self-signed certificate is created, signed, and issued by the subject of the certificate (the entity it is issued to),
+while a CA certificate is created, signed, and issued by a third party called a certificate authority (CA)
+that is authorized to validate the identity of the applicant. 
+
+A CA certificate signed by a publicly trusted CA can build trust among the website visitors,
+and therefore, it is used to validate public websites.
+A self-signed certificate is used in private networks.
+
+Both self-signed certificates and CA-signed certificates include X.509 digital certificates
+such as SSL/TLS certificates, code signing certificates, email signing certificates, etc. 
+However, the term “self-signed certificates” commonly refers to self-signed SSL/TLS certificates,
+which are also known as private SSL certificates.
+
+Self-signed certificates are suitable for internal (intranet) sites, and sites used in testing environments.
+CA certificates, on the other hand, are suitable for all public-facing websites and software.

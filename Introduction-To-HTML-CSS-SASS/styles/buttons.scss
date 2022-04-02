@@ -1,0 +1,41 @@
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px 30px 0px;
+
+    .buttons {
+        display: flex;
+
+        button {
+            width: 150px;
+            height: 30px;
+            border-radius: 9px;
+            font-family: calibri;
+            font-weight: bold;
+            font-size: 14px;
+            margin: 5px 5px 0px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.present-btn {
+                border: 2px solid #373636;
+                color: #373636;
+            }
+
+            ion-icon {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .button-icons {
+        display: flex;
+
+        .icon {
+            border-radius: 15px;
+            height: 30px;
+            margin: 5px 5px 0px 0px;
+        }
+    }
+}

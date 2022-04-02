@@ -1,0 +1,3 @@
+USE Restaurant
+
+EXEC dbo.usp_GetSoldProductsForGivenMonth 2

@@ -1,0 +1,72 @@
+	The open systems interconnection (OSI) model
+enables diverse communication systems to communicate using standard protocols.
+It’s based on the concept of splitting up a communication system 
+into seven abstract layers, each one stacked upon the last.
+
+	1. The physical layer transmits raw bit stream over the physical medium.
+This layer includes the physical equipment involved in the data transfer, such as the cables and switches. 
+At this level the data gets converted into a bit stream, which is a string of 1s and 0s. 
+    The physical layer of both devices must also agree on a signal convention so that
+the 1s can be distinguished from the 0s on both devices.
+
+	2. The data link layer defines the format of data on the network.
+It facilitates data transfer between two devices on the same network.
+This layer breaks packets from the network layer into smaller pieces called frames.
+    It is also responsible for flow control and error control in intra-network communication. 
+
+	3. The network layer decides which physical path tha data will take.
+The layer is responsible for facilitating data transfer between two different networks.
+It breaks up segments from the transport layer into smaller units (called packets) on the sender’s device
+and reassembles these packets on the receiving device.
+    The network layer also finds the best physical path for the data to reach its destination
+(a process known as routing).
+
+	4. The transport layer responsible for end-to-end communication between the two devices. 
+This includes taking data from the session layer and breaking it up 
+into chunks called segments before sending it to layer 3.
+    The transport layer on the receiving device is responsible for
+reassembling the segments into data the session layer can consume.
+    The transport layer is also responsible for flow control that determines 
+an optimal speed of transmission to ensure that a sender 
+with a fast connection doesn’t overwhelm a receiver with a slow connection. 
+    The transport layer performs error control on the receiving end 
+by ensuring that the data received is complete,
+and requesting a retransmission if it isn’t.
+    The transport layer only does flow control and error control for inter-network communications.
+
+	5. The session layer is responsible for opening and closing communication between the two devices.
+The session layer ensures that the session (i.e. the time between when the communication is opened and closed)
+stays open long enough to transfer all the data being exchanged, 
+and then promptly closes the session in order to avoid wasting resources.
+    The session layer also synchronizes data transfer with checkpoints. 
+Without the those the entire transfer would have to begin again from scratch.
+
+	6. The presentation layer is primarily responsible for preparing data
+so that it can be used by the application layer;
+    The presentation layer is responsible for:
+- character code translation (e.g. from ASCII to EBCDIC)
+- data compression (allows to reduce the number of bits that needs to be transmitted on the network)
+- data encryption (helps to encrypt data for security purposes — for example, password encryption).
+
+	7. The application layer is the only layer that directly interacts with data from the user
+More precisely it interacts with software applications to implement a communicating component.
+The interpretation of data by the application program is always outside the scope of the OSI model.
+    Application-layer helps identify communication partners,
+determining resource availability, and synchronizing communication.
+It allows users to log on to a remote host, it also provides various e-mail services,
+offers distributed database sources and access for global information about various objects and services.
+
+	8. The "user or "political" layer is considered humorous
+in the world of networking professionals.
+    "Understanding the OSI model requires understanding the actual user."
+Network neutrality, spectrum management and digital inclusion are considered
+political policies and help to shape the 7-layer OSI model.
+
+	Protocols supported at various levels:
+1. Physical network - Ethernet (IEEE 802.3) Token Ring, RS-232
+2. Data link - PPP, Frame Relay, ATM, Fiber Cable
+3. Network - IPV5, IPV6, ICMP, ARP
+4. Transport - TCP, UDP
+5. Session - NetBIOS, PAP, SCP
+6. Presentation - SSL, TLS, AFP, NCP
+7. Application - HTTP, HTTPS, FTP, SMTP, DNS

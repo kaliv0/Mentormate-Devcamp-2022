@@ -1,0 +1,6 @@
+
+/home/user/documents/project1
+
+cd ../../../www/html/ 		 =>  /home/www/html/
+cd ../../../user/documents/	 =>  /user/documents/
+cd ../				 =>  /user/

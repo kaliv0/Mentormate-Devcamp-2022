@@ -1,0 +1,49 @@
+.my-header {
+    display: flex;
+
+    .my-header-item {
+        border: 1px solid #9b9898;
+        width: 33%;
+        min-height: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 0px 0px 25px;
+        justify-content: center;
+        box-sizing: initial;
+
+        .basic-info {
+            display: flex;
+            align-items: center;
+
+            .small-pic {
+                height: 50px;
+                margin-right: 10px;
+            }
+
+            .name {
+                font-weight: bold;
+            }
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            word-break: break-word;
+
+            ion-icon {
+                margin-right: 10px;
+            }
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+
+            ion-icon {
+                font-size: 28px;
+                margin-right: 5px;
+            }
+        }
+    }
+}

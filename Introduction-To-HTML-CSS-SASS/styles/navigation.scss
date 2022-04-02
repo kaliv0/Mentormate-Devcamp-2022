@@ -1,0 +1,43 @@
+.nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #d3cece;
+    padding: 0px 5%;
+    border-top: 1px solid grey;
+
+    ul {
+        display: flex;
+        margin-bottom: 0px;
+        list-style: none;
+        height: 100%;
+        align-items: center;
+
+        li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: rgb(247, 247, 247);
+            }
+
+            a {
+                margin: 15px;
+                font-family: myriad pro regular;
+                font-size: 15px;
+                font-weight: 700;
+                text-decoration: none;
+
+                &.active {
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+}

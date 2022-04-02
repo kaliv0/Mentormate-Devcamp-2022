@@ -1,0 +1,6 @@
+open terminal in C:\Users\Kaloyan\source\repos\MentorMate.Payments\MentorMate.Payments.App
+dotnet build  
+dotnet restore
+cd ../MentorMate.Payments.Web
+dotnet run
+open localhost in browser

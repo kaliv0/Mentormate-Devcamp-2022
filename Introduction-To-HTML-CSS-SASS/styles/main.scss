@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body {
+    background: url("../img/background.jpg") no-repeat fixed center;
+    background-size: 100% 100%;
+
+    margin: 50px !important;
+
+    .my-main-container {
+        background-color: #f6f5f5;
+        border: 2px solid #9b9898;
+
+        .main-pic {
+            width: 355px;
+            height: 380px;
+            margin: 15px 0px 15px 0px;
+        }
+
+        .text-container {
+            margin: 0px 20px 0px 15px;
+        }
+
+        .content {
+            padding: 25px;
+            display: flex;
+        }
+    }
+}

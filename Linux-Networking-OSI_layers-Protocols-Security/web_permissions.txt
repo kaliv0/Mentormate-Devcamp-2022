@@ -1,0 +1,31 @@
+(full article: https://askubuntu.com/questions/767504/permissions-problems-with-var-www-html-and-my-own-home-directory-for-a-website)
+
+  You should never have to run a website from within your home directory.
+  You would otherwise have to give the web server the ability to traverse through /home/ to see the directory structure,
+but also into /home/$USER/ (your user's home directory, 
+where we can try and see what else exists in your user directory),
+as well as any other subfolders in there.
+  A poorly-configured or misconfigured or unpatched web server can cause massive data leakage this way,
+or loss of credentials and such which would put your personal data and logins on different things at risk.
+  The symlink approach you are using doesn't help either for the same reason 
+as trying to give the server permissions to read /home/andre/www/moodle - 
+the web server has to be able to traverse your home directory 
+to get to the location that the symlink in /var/www/html points to, which still poses that security risk.
+
+  Firstly, use sudo cp -r /home/andre/www/moodle/ /var/www/html/.
+This will copy your files to /var/www/html, and keep it away from your own home directory.
+We'll then redo the permissions so you and the web server can access everything in that directory,
+and give your user full read/write to all the files and directories.
+Then, you will only ever have to work out of /var/www/html for your site.
+
+This is in effect, four steps, after you copy your data back to /var/www/html:
+
+- Give Apache access to the folders and files, so it can serve the site without 403 errors.
+- Give your user 'owner' over the files and folders, 
+  and give yourself read/write on all of the files and folders,
+  as well as the ability to traverse the directories.
+- (Optional but recommended) Set it up such that any files or folders created from hereon
+  in the entirety of the directory structure has the group set to be www-data.
+- (Optional) Final security cleanup, where we set up permissions 
+ so you and the web server can see the site data, but other users cannot access files or the directory structure for the site.
+
