@@ -1,10 +1,7 @@
 let successCounter = 0;
-//const startTime = Date.now();
-let startTime;
+const startTime = Date.now();
 
 function delay(delayTime) {
-    startTime = Date.now();
-
     return new Promise((resolve, reject) => {
         if (Math.random() >= 0.5) {
             setTimeout(() => { resolve(); }, delayTime);
